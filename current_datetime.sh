@@ -1,7 +1,5 @@
 #!/bin/bash
-# la variable date_actuelle qui contien le script qui cree la date actuelle
-Date_actuelle=$(date +"%y/%m/%d")
-#la variable Heure_actuelle qui contient le srcipt de l'heure actuele
-Heure_actuelle=$(date +"%H/%M/%S")
+# la variable date_actuelle qui contien le script >
+Date_actuelle=$(date +"%y-%m-%d %H:%M:%S")
+#la variable Heure_actuelle qui contient le srcipt>
 echo "$Date_actuelle"
-echo "$Heure_actuelle"
