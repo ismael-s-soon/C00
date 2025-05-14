@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# Nom du dossier
 dossier="myfloder"
+compteur=0
 
-# Vérifier si le dossier existe
-    nb_elements=$(ls "$dossier" | wc -l)
+for element in $(ls "$dossier" 2>/dev/null); do
+  if [ -f "$dossier/$element" ]; then
+    compteur=$((compteur + 1))
+  fi
+done
 echo "$dossier"
-    echo "Le dossier $dossier contient $nb_elements fichier(s)."
+echo ""
+echo "Le dossier $dossier contient $compteur fichier(s)."
