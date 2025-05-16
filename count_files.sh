@@ -1,6 +1,6 @@
 #demander d'entrée vers le chemin d'un répertoire 
 read myfolder
 #verifier le chemin d'entrée 
-nb_fichiers=$"(ls "$myfolder"|wc -l)"
-compteurs=$(echo $nb_fichiers)
-echo "Le dossier "$myfolder" contient "$compteurs" fichier(s)."
+file_count_calc=$"(ls "$myfolder"|wc -l)"
+num_files=$(echo $file_count_calc)
+echo "Le dossier "$myfolder" contient "$num_files" fichier(s)."
