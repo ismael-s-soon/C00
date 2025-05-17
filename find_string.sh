@@ -5,7 +5,7 @@ read f
 read c
 #et cellle la contient la chaine 
 #nous allons maintenant proceder a la recherche de la chaine dans le fichier a l'aide de grep
-if grep -q "$c" "$f"; then 
+if grep "$c" "$f"; then 
 echo "La chaine '$c' a été trouvée dans $f."
 else
 echo "La chaine '$c' n'a pas été trouvée dans $f."
