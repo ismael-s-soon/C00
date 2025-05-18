@@ -1,4 +1,6 @@
 #!/bin/bash
+#nous allons créer d'abord le fichier texte 
+mkdir sample.txt
 #nous allons creer deux variables
 read f
 #celle la contient le fichier 
